@@ -9,14 +9,15 @@ ul.navigation {
         a {
             font-size: 16px;
             display: inline-block;
-            padding: 7px 20px;
+            padding: 10px 25px;
             text-decoration: none;
             color: #fff;
         }
 
         &:hover {
-            background-color: rgba(255, 255, 255, 0.897);
-            color: #000;
+            background-color: rgba(255, 255, 255, 0.993);
+            color: rgb(0, 0, 0);
+            transform: scale(0.9);
 
             a {
                 color: rgba(0, 0, 0, 0.733);

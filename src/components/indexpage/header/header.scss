@@ -8,7 +8,12 @@
     min-height: 700px;
 
     @media screen and (min-width: 1490px) {
-        background-size: 900px auto;
+        background-size: 850px auto;
+    }
+
+    @media screen and (min-width: 1600px) {
+        background-size: 1000px auto;
+        min-height: 780px;
     }
 
     nav {
@@ -21,12 +26,15 @@
         .logo-container {
             & > a > img {
                 width: 250px;
+                &:hover {
+                    transform: scale(0.95);
+                }
             }
         }
 
         .navigation {
             // background-color: red;
-            width: 400px;
+            width: 450px;
         }
     }
 
@@ -37,12 +45,13 @@
         align-items: stretch;
         // min-height: 500px;
         // background-color: greenyellow;
-
+        flex-wrap: wrap;
         .text-content {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             max-width: 560px;
+            
             // height: 100%;
             flex: 1;
             // background-color: red;
@@ -78,6 +87,36 @@
                 align-items: center;
                 color: rgba(0, 0, 0, 0.123);
                 font-size: 50px;
+                display: none;
+            }
+        }
+
+        .slider-navigation {
+            // flex-grow: 1;
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+            .nav-cirkle {
+                background-color: #535353;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                margin: 0 3px;
+                cursor: pointer;
+                &.active {
+                    background-color: #fff;
+                    width: 15px;
+                    height: 15px;
+                    border: 2px solid #535353;
+                }
+                &:hover {
+                    transform: scale(0.8);
+                    background-color: #53535388;
+            }
             }
         }
     }

@@ -5,7 +5,8 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
-import Header from "../components/indexpage/header/header"
+import Header from "../components/indexpage/header/header";
+import OurProducts from "../components/indexpage/products/products";
 
 class Index extends React.Component {
   render() {
@@ -17,6 +18,7 @@ class Index extends React.Component {
           <SEO />
           {/* <PostListing postEdges={postEdges} /> */}
           <Header />
+          <OurProducts />
 
 
 
