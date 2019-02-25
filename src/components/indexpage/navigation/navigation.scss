@@ -1,0 +1,27 @@
+ul.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    li {
+        border-radius: 30px;
+
+        a {
+            font-size: 16px;
+            display: inline-block;
+            padding: 7px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.897);
+            color: #000;
+
+            a {
+                color: rgba(0, 0, 0, 0.733);
+                // letter-spacing: 0.7px;
+            }
+        }
+    }
+}

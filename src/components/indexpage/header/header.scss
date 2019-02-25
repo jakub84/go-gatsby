@@ -1,0 +1,84 @@
+.header {
+    width: 100%;
+    border-top: 2px solid #9d0073;
+    background-image: url("../../../../static/header/header-background.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 55% auto;
+    min-height: 700px;
+
+    @media screen and (min-width: 1490px) {
+        background-size: 900px auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0 50px 0;
+
+        .logo-container {
+            & > a > img {
+                width: 250px;
+            }
+        }
+
+        .navigation {
+            // background-color: red;
+            width: 400px;
+        }
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        // min-height: 500px;
+        // background-color: greenyellow;
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 560px;
+            // height: 100%;
+            flex: 1;
+            // background-color: red;
+
+            h1 {
+                font-size: 80px;
+                margin: 40px 0 40px 0;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            .btns-content {
+                margin-top: 40px;
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+
+        .image-content {
+            text-align: center;
+
+            .image {
+                width: 505px;
+                height: 400px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 10px;
+                box-shadow: 0 13px 6px rgba(114, 114, 114, 0.13);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: rgba(0, 0, 0, 0.123);
+                font-size: 50px;
+            }
+        }
+    }
+}
