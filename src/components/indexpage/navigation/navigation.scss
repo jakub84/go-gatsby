@@ -7,6 +7,7 @@ ul.navigation {
         border-radius: 30px;
 
         a {
+            font-family: "main-text-stronger";
             font-size: 16px;
             display: inline-block;
             padding: 10px 25px;
@@ -23,6 +24,18 @@ ul.navigation {
                 color: rgba(0, 0, 0, 0.733);
                 // letter-spacing: 0.7px;
             }
+        }
+    }
+
+    @media (max-width: 950px) {
+        position: relative;
+        right: 0;
+        display: inline-block;
+        width: 30px !important;
+        height: 30px;
+        background-color: red;
+        li {
+            display: none;
         }
     }
 }
