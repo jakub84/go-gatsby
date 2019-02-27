@@ -11,6 +11,7 @@ function header(props) {
         <header className="header" id="header">
             <div className="container">
                 <nav>
+                    <div className="nav-container ">
                     <div className="logo-container">
                         <Link to="#">
                             <img src={mainLogo} />
@@ -19,6 +20,8 @@ function header(props) {
                     <div className="navigation">
                         <Navigation />
                     </div>
+                    </div>
+                    
                 </nav>
                 <div className="main-content">
                     <div className="text-content">

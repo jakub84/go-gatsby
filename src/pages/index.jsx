@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
@@ -11,8 +11,38 @@ import ContentSection from "../components/indexpage/content-section/ContentSecti
 import Button from "../components/indexpage/button/button";
 import Contact from "../components/indexpage/contact/contact"
 
-function Index (props) {
-  
+
+
+
+class Index extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      lastScroll: 0
+    }
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  };
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  };
+
+  handleScroll = () => {
+    const navigation = document.querySelector('nav')
+    let scroll = document.documentElement.scrollTop || document.body.scrollTop;
+    // if (this.state.lastScroll > scroll) {
+      if (scroll > 100) {
+        navigation.classList.add("scrolled-menu")
+      } else {
+        navigation.classList.remove("scrolled-menu")
+      }
+    // }
+
+  }
+
+  render() {
     // const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <Layout>
@@ -23,32 +53,32 @@ function Index (props) {
           <Header />
           <OurProducts />
           <ContentSection
-          id= "oferta-specjalna"
-          type="dark"
-          title = "oferta specjalna"
-          content= "Wszystkie nasze produkty, takie jak balony, kokardy narodowe, torby papierowe, czy daszki i czapeczki kartonowe są wykonywane z bardzo dużą dokładnością. Mamy doświadczenie w tworzeniu gadżetów dzięki czemu naszą produkcję potrafimy dostosować do wymagań czasowych oraz ilościowych naszych klientów. Np. chorągiewki papierowe, czy kokardy narodowe wykonujemy w bardzo dużych ilościach nawet w ciągu kilku dni roboczych. Tak samo podchodzimy do produkcji gadżetów takich jak balony, czy czapeczki i daszki kartonowe.Dodatkowym plusem są także nasze ceny, które swoją atrakcyjność zawdzięczają temu, że bezpośrednio sprzedajemy swoje produkty, a więc zamawiając u nas towar nie płacą Państwo pośrednikom."
-          
+            id="oferta-specjalna"
+            type="dark"
+            title="oferta specjalna"
+            content="Wszystkie nasze produkty, takie jak balony, kokardy narodowe, torby papierowe, czy daszki i czapeczki kartonowe są wykonywane z bardzo dużą dokładnością. Mamy doświadczenie w tworzeniu gadżetów dzięki czemu naszą produkcję potrafimy dostosować do wymagań czasowych oraz ilościowych naszych klientów. Np. chorągiewki papierowe, czy kokardy narodowe wykonujemy w bardzo dużych ilościach nawet w ciągu kilku dni roboczych. Tak samo podchodzimy do produkcji gadżetów takich jak balony, czy czapeczki i daszki kartonowe.Dodatkowym plusem są także nasze ceny, które swoją atrakcyjność zawdzięczają temu, że bezpośrednio sprzedajemy swoje produkty, a więc zamawiając u nas towar nie płacą Państwo pośrednikom."
+
           >
-          <Button 
-                    type= "white"
-                    linkContent = "Allegro"
-                    linkTo = "#"
-                    />
+            <Button
+              type="white"
+              linkContent="Allegro"
+              linkTo="#"
+            />
           </ContentSection >
           <ContentSection
-          id= "o-nas"
-          title = "o nas"
-          content = "Jesteśmy ludźmi z pasją, którzy produkcję gadżetów traktują zarówno jako pracę, jak i wspaniałą zabawę. Uważamy, że trzeba łączyć przyjemne z pożytecznym bo wtedy nasze wysiłki na prawdę mają sens i przekładają się na zadowolenie naszych Klientów. Wszystkie nasze produkty, takie jak balony, kokardy narodowe, torby papierowe, czy daszki i czapeczki kartonowe są wykonywane z bardzo dużą dokładnością. Mamy doświadczenie w tworzeniu gadżetów dzięki czemu naszą produkcję potrafimy dostosować do wymagań czasowych oraz ilościowych naszych klientów. Np. chorągiewki papierowe, czy kokardy narodowe wykonujemy w bardzo dużych ilościach nawet w ciągu kilku dni roboczych. Tak samo podchodzimy do produkcji gadżetów takich jak balony, czy czapeczki i daszki kartonowe. Dodatkowym plusem są także nasze ceny, które swoją atrakcyjność zawdzięczają temu, że bezpośrednio sprzedajemy swoje produkty, a więc zamawiając u nas towar nie płacą Państwo pośrednikom. Dziękujemy za odwiedzenie strony naszej firmy. Zapraszamy do zapoznania się z pełną ofertą Galerii Obrazu."
+            id="o-nas"
+            title="o nas"
+            content="Jesteśmy ludźmi z pasją, którzy produkcję gadżetów traktują zarówno jako pracę, jak i wspaniałą zabawę. Uważamy, że trzeba łączyć przyjemne z pożytecznym bo wtedy nasze wysiłki na prawdę mają sens i przekładają się na zadowolenie naszych Klientów. Wszystkie nasze produkty, takie jak balony, kokardy narodowe, torby papierowe, czy daszki i czapeczki kartonowe są wykonywane z bardzo dużą dokładnością. Mamy doświadczenie w tworzeniu gadżetów dzięki czemu naszą produkcję potrafimy dostosować do wymagań czasowych oraz ilościowych naszych klientów. Np. chorągiewki papierowe, czy kokardy narodowe wykonujemy w bardzo dużych ilościach nawet w ciągu kilku dni roboczych. Tak samo podchodzimy do produkcji gadżetów takich jak balony, czy czapeczki i daszki kartonowe. Dodatkowym plusem są także nasze ceny, które swoją atrakcyjność zawdzięczają temu, że bezpośrednio sprzedajemy swoje produkty, a więc zamawiając u nas towar nie płacą Państwo pośrednikom. Dziękujemy za odwiedzenie strony naszej firmy. Zapraszamy do zapoznania się z pełną ofertą Galerii Obrazu."
           >
-          <Button 
-                    type= "hide"
-                    />
+            <Button
+              type="hide"
+            />
           </ContentSection>
-          <Contact 
-          // id= "kontakt"
-          title = "kontakt"
-          content = "Jeśli masz pytania, sugestie lub wątpliwości, skontaktuj się z nami. Najlepsze projekty często są kreowane dzięki kontaktom bezpośrednim rozwijającym wzajemne relacje. 
-          Pomocą służą nasi przedstawiciele handlowi.
+          <Contact
+            // id= "kontakt"
+            title="kontakt"
+            content="Jeśli masz pytania, sugestie lub wątpliwości, skontaktuj się z nami. Najlepsze projekty często są kreowane dzięki kontaktom bezpośrednim rozwijającym wzajemne relacje. 
+            Pomocą służą nasi przedstawiciele handlowi.
           Możesz także skorzystać z zamieszczonego poniżej formularza kontaktowego."
           />
 
@@ -60,6 +90,7 @@ function Index (props) {
       </Layout>
     );
   }
+}
 
 
 export default Index;
