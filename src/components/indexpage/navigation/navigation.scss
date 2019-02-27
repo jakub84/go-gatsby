@@ -3,6 +3,7 @@
     flex-direction: row;
     align-items: center;
 
+
     ul.navigation {
         display: flex;
         flex-direction: row;
@@ -37,7 +38,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            z-index: 9;
+            z-index: 999999;
             background-color: #a9468f;
             display: flex;
             flex-direction: column;
@@ -91,7 +92,7 @@
         cursor: pointer;
         overflow: hidden;
         position: relative;
-        z-index: 10;
+        z-index: 999999;
         @media (max-width: 950px) {
             display: inline-block;
         }
@@ -103,7 +104,24 @@
             width: 100%;
             margin-bottom: 5px;
             border-radius: 10px;
-            background-color: #fff;
+            background-color: rgb(255, 255, 255);
+        }
+
+        &:hover {
+            .nav-icon-element:nth-last-of-type(1) {
+                width: 90%;
+                background-color: rgba(255, 255, 255, 0.842);
+            }
+
+            .nav-icon-element:nth-last-of-type(2) {
+                width: 60%;
+                background-color: rgba(255, 255, 255, 0.801);
+            }
+
+            .nav-icon-element:nth-last-of-type(3) {
+                width: 80%;
+                background-color: rgba(255, 255, 255, 0.671);
+            }
         }
     }
 }

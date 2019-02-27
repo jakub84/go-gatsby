@@ -7,7 +7,7 @@ import splash from "../../../../static/fx/splash.svg"
 
 function ContentSection (props) {
         return (
-            <div className={`content-section ${props.type}`}>
+            <div className={`content-section ${props.type}`} id={props.id}>
                 <div className="container">
                     <h2>{props.title}</h2>
                     <div className="separator"></div>

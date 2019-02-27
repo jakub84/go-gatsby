@@ -8,7 +8,7 @@ import { Link } from "gatsby";
 function header(props) {
 
     return (
-        <div className="header">
+        <header className="header" id="header">
             <div className="container">
                 <nav>
                     <div className="logo-container">
@@ -47,7 +47,7 @@ function header(props) {
                 </div>
             </div>
 
-        </div>
+        </header>
     );
 
 }

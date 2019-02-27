@@ -25,11 +25,20 @@
     }
 
     nav {
+        z-index: 99999;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 0 30px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 20px 0 50px 0;
+        margin: 20px auto 50px auto;
+        max-width: 1100px;
+
+
 
         .logo-container {
             & > a > img {
@@ -52,6 +61,7 @@
     }
 
     .main-content {
+        margin-top: 200px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;

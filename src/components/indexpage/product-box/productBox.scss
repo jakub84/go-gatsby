@@ -21,8 +21,9 @@
     img {
         margin-bottom: 30px;
         height: 110px;
+        max-width: 120px;
         filter: contrast(0.5);
-        
+
     }
 
     &:hover {
