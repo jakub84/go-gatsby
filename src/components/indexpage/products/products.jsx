@@ -16,7 +16,7 @@ import icon8 from "../../../../static/product-icons/torby-icon.svg"
 function Products(props) {
 
     return (
-        <div className="products" id="products">
+        <div className="products" id="nasze-produkty">
             <div className="container">
                 <h2>NASZE PRODUKTY</h2>
                 <div className="separator"></div>

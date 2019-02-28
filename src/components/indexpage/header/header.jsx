@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import "./header.scss";
 import Navigation from "../navigation/navigation";
 import mainLogo from "../../../../static/header/go_logo.svg";
+import mainLogoWhite from "../../../../static/header/go_logo-white.svg";
 import Button from "../button/button";
 import { Link } from "gatsby";
+import SimpleSlider from "../slider/slider"
 
 function header(props) {
 
@@ -12,9 +14,10 @@ function header(props) {
             <div className="container">
                 <nav>
                     <div className="nav-container ">
-                    <div className="logo-container">
+                    <div className="logo-container white-logo">
                         <Link to="#">
-                            <img src={mainLogo} />
+                            <img src={props.logo} alt ="galeria obrazu" />
+                           
                         </Link>
                     </div>
                     <div className="navigation">
@@ -23,7 +26,8 @@ function header(props) {
                     </div>
                     
                 </nav>
-                <div className="main-content">
+                <SimpleSlider id="simple-slider" />
+                {/* <div className="main-content">
                     <div className="text-content">
                         <h1>This is headline</h1>
                         <p>Bacon ipsum dolor amet filet mignon brisket <strong> pork chop tongue pork belly pork corned beef biltong doner sausage picanha. Shank beef ribs short loin capicola picanha landjaeger</strong> swine pastrami brisket ground round frankfurter flank pork chop ham.</p>
@@ -47,7 +51,7 @@ function header(props) {
                         <div className="nav-cirkle"></div>
                         <div className="nav-cirkle"></div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
         </header>

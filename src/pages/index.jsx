@@ -9,7 +9,10 @@ import Header from "../components/indexpage/header/header";
 import OurProducts from "../components/indexpage/products/products";
 import ContentSection from "../components/indexpage/content-section/ContentSection";
 import Button from "../components/indexpage/button/button";
-import Contact from "../components/indexpage/contact/contact"
+import Contact from "../components/indexpage/contact/contact";
+import mainLogoWhite from "../../static/header/go_logo-white.svg";
+import mainLogo from "../../static/header/go_logo.svg";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 
@@ -18,7 +21,8 @@ class Index extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      lastScroll: 0
+      lastScroll: 0,
+      logoDark : true
     }
   }
   componentDidMount() {
@@ -30,13 +34,26 @@ class Index extends Component {
   };
 
   handleScroll = () => {
-    const navigation = document.querySelector('nav')
+    const navigation = document.querySelector('nav');
+    const logo = document.querySelector(".logo-container > a > img");
     let scroll = document.documentElement.scrollTop || document.body.scrollTop;
     // if (this.state.lastScroll > scroll) {
       if (scroll > 100) {
-        navigation.classList.add("scrolled-menu")
+        navigation.classList.add("scrolled-menu");
+        logo.style.width = "120px";
+        this.setState({
+         
+          logoDark: false
+      })
+
+        
       } else {
-        navigation.classList.remove("scrolled-menu")
+        navigation.classList.remove("scrolled-menu");
+        logo.style.width = "250px";
+        this.setState({
+          
+          logoDark: true
+      })
       }
     // }
 
@@ -50,10 +67,12 @@ class Index extends Component {
           <Helmet title={config.siteTitle} />
           <SEO />
           {/* <PostListing postEdges={postEdges} /> */}
-          <Header />
+          <Header 
+          logo = {this.state.logoDark === true ? mainLogo : mainLogoWhite }
+          />
           <OurProducts />
           <ContentSection
-            id="oferta-specjalna"
+         
             type="dark"
             title="oferta specjalna"
             content="Wszystkie nasze produkty, takie jak balony, kokardy narodowe, torby papierowe, czy daszki i czapeczki kartonowe są wykonywane z bardzo dużą dokładnością. Mamy doświadczenie w tworzeniu gadżetów dzięki czemu naszą produkcję potrafimy dostosować do wymagań czasowych oraz ilościowych naszych klientów. Np. chorągiewki papierowe, czy kokardy narodowe wykonujemy w bardzo dużych ilościach nawet w ciągu kilku dni roboczych. Tak samo podchodzimy do produkcji gadżetów takich jak balony, czy czapeczki i daszki kartonowe.Dodatkowym plusem są także nasze ceny, które swoją atrakcyjność zawdzięczają temu, że bezpośrednio sprzedajemy swoje produkty, a więc zamawiając u nas towar nie płacą Państwo pośrednikom."
