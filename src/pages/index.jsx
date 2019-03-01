@@ -12,7 +12,7 @@ import Button from "../components/indexpage/button/button";
 import Contact from "../components/indexpage/contact/contact";
 import mainLogoWhite from "../../static/header/go_logo-white.svg";
 import mainLogo from "../../static/header/go_logo.svg";
-import { Link, animateScroll as scroll } from "react-scroll";
+
 
 
 
