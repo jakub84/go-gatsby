@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>http://galeriaobrazu.com.pl/#/#/bold-mage</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://galeriaobrazu.com.pl/#/#/the-fallen-time</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/angels-of-mist</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://galeriaobrazu.com.pl/#/#/the-fallen-time</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://galeriaobrazu.com.pl/#/#/bold-mage</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/random-project-4-with-super-long-title-phase-one</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/the-fairys-witches</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/the-butterfly-of-the-edge</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/birch-in-the-roses</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/big-sample-test</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://galeriaobrazu.com.pl/#/#/tags/programming/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://galeriaobrazu.com.pl/#/#/tags/stuff/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://galeriaobrazu.com.pl/#/#/tags/cheese/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/tags/other/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/tags/test/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/tags/something/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/tags/tagging/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://galeriaobrazu.com.pl/#/#/tags/cheese/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://galeriaobrazu.com.pl/#/#/tags/programming/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://galeriaobrazu.com.pl/#/#/tags/stuff/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/tags/say-hi/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/tags/more-tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/tags/testing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/tags/another-one/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/tags/tag/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/tags/huge/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://galeriaobrazu.com.pl/#/#/categories/tech/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://galeriaobrazu.com.pl/#/#/categories/another-one/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/categories/test-3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://galeriaobrazu.com.pl/#/#/categories/another-one/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://galeriaobrazu.com.pl/#/#/categories/tech/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/categories/random/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/categories/something/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://galeriaobrazu.com.pl/#/#/categories/moar/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
