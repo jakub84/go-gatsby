@@ -1,5 +1,5 @@
 [build]
-  publish = "public"
+  publish = "docs"
   command = "yarn run build"
 [build.environment]
   YARN_VERSION = "1.7.0"
