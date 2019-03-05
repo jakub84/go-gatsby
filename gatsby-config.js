@@ -34,6 +34,14 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+          rule: {
+            include: `/assets/`
+          }
+      }
+  },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
@@ -99,12 +107,7 @@ module.exports = {
         ]
       }
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        globPatterns: ['**/*.{js,jpg,svg,html,css}'],
-      },
-    },
+    "gatsby-plugin-offline"
     // {
     //   resolve: "gatsby-plugin-feed",
     //   options: {
