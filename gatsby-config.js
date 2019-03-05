@@ -99,7 +99,12 @@ module.exports = {
         ]
       }
     },
-    "gatsby-plugin-offline"
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        globPatterns: ['**/*.{js,jpg,svg,html,css}'],
+      },
+    },
     // {
     //   resolve: "gatsby-plugin-feed",
     //   options: {

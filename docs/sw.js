@@ -26,24 +26,93 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-5355b03f1cf93224ed74.js"
+    "url": "5-31756512084e0d8cbd88.js"
   },
   {
-    "url": "app-4af3f6781c6c727aa8bc.js"
+    "url": "app-c255e2642fc3368f1d27.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-9ce9f16df6e1dfdafb9b.js"
   },
   {
+    "url": "component---src-pages-index-jsx-f8d048a4044d2da3f9e7.js"
+  },
+  {
+    "url": "component---src-pages-index-jsx.e866efc591bf3fc96046.css"
+  },
+  {
+    "url": "fx/splash.svg",
+    "revision": "f394eaa65736e1d17f75e0dfff09d3cb"
+  },
+  {
+    "url": "header/go_logo-white.svg",
+    "revision": "b5d58646982a7b26b7526d4ab0249ef9"
+  },
+  {
+    "url": "header/go_logo.svg",
+    "revision": "425aa8a6561112d95a4f256442b139a8"
+  },
+  {
+    "url": "header/header-background.svg",
+    "revision": "2294c6d19fdb9fe9462eb139f7b445f7"
+  },
+  {
+    "url": "idb-keyval-iife.min.js"
+  },
+  {
+    "url": "index.html",
+    "revision": "78b5608da7e580fe1fa8398081952734"
+  },
+  {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "202cebaa2826a33cb29139167cb3f8ea"
+    "revision": "b35278337087b862826690a69c71f9f0"
   },
   {
-    "url": "static/d/520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E.json"
+    "url": "pages-manifest-c0316c7fb1d94110556b.js"
   },
   {
-    "url": "manifest.webmanifest",
-    "revision": "482eeeb61ef21f4e6b1a02d33fabf82b"
+    "url": "product-icons/balony-icon.svg",
+    "revision": "332ce6bf02a7b621137e85c6d4abaf60"
+  },
+  {
+    "url": "product-icons/choragiewki-icon.svg",
+    "revision": "fcd8cf8143ee312b64fd1c4a9be8cc3b"
+  },
+  {
+    "url": "product-icons/czapeczki-icon.svg",
+    "revision": "1dfbb78fb0bee5b6ac2f6e7a257f8902"
+  },
+  {
+    "url": "product-icons/daszki-icon.svg",
+    "revision": "3cf08d63dd7f0a33ff582cfd28f25524"
+  },
+  {
+    "url": "product-icons/flagi-wsz-icon.svg",
+    "revision": "c64e2eb4b6caf8a1cef58fd0cef5074a"
+  },
+  {
+    "url": "product-icons/kokardy-narodowe-icon.svg",
+    "revision": "f61175d8cd2e32108803762468f764d2"
+  },
+  {
+    "url": "product-icons/torby-icon.svg",
+    "revision": "cb3f74027bff8890ec4d31a23b792e15"
+  },
+  {
+    "url": "product-icons/wiatraczki-icon.svg",
+    "revision": "54a92688907fdc084fcdf7e87c76ee48"
+  },
+  {
+    "url": "static/go_logo-425aa8a6561112d95a4f256442b139a8.svg"
+  },
+  {
+    "url": "static/go_logo-white-b5d58646982a7b26b7526d4ab0249ef9.svg"
+  },
+  {
+    "url": "static/header-background-2294c6d19fdb9fe9462eb139f7b445f7.svg"
+  },
+  {
+    "url": "webpack-runtime-5355b03f1cf93224ed74.js"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
