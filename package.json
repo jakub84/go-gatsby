@@ -74,6 +74,7 @@
     "lint:js": "eslint --ext .js,.jsx .",
     "lint:md": "remark content/posts/",
     "write-good": "write-good $(glob 'content/posts/**/*.md')",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "format:js": "prettier '**/*.{js,jsx}' --write"
   },
   "remarkConfig": {
