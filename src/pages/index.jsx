@@ -74,20 +74,20 @@ class Index extends Component {
           <ContentSection
          
             type="dark"
-            title="oferta specjalna"
-            content="Wszystkie nasze produkty, takie jak balony, kokardy narodowe, torby papierowe, czy daszki i czapeczki kartonowe są wykonywane z bardzo dużą dokładnością. Mamy doświadczenie w tworzeniu gadżetów dzięki czemu naszą produkcję potrafimy dostosować do wymagań czasowych oraz ilościowych naszych klientów. Np. chorągiewki papierowe, czy kokardy narodowe wykonujemy w bardzo dużych ilościach nawet w ciągu kilku dni roboczych. Tak samo podchodzimy do produkcji gadżetów takich jak balony, czy czapeczki i daszki kartonowe.Dodatkowym plusem są także nasze ceny, które swoją atrakcyjność zawdzięczają temu, że bezpośrednio sprzedajemy swoje produkty, a więc zamawiając u nas towar nie płacą Państwo pośrednikom."
+            title="Capicola brisket venison"
+            content="Capicola brisket venison, ball tip buffalo ground round alcatra biltong chuck drumstick. Ribeye sirloin boudin t-bone, chuck pork belly short loin burgdoggen brisket. Strip steak shank turducken spare ribs ball tip bresaola, picanha fatback shoulder beef doner venison rump drumstick. Tongue rump flank burgdoggen meatball pastrami strip steak. Tenderloin pig tongue t-bone ball tip, cow venison capicola pancetta shoulder prosciutto pastrami fatback beef ribs chuck. Shankle spare ribs short ribs brisket. Drumstick andouille pancetta, jerky kielbasa turkey boudin capicola pork loin salami tail frankfurter."
 
           >
             <Button
               type="white"
-              linkContent="Allegro"
+              linkContent="call to action"
               linkTo="#"
             />
           </ContentSection >
           <ContentSection
             id="o-nas"
             title="o nas"
-            content="Jesteśmy ludźmi z pasją, którzy produkcję gadżetów traktują zarówno jako pracę, jak i wspaniałą zabawę. Uważamy, że trzeba łączyć przyjemne z pożytecznym bo wtedy nasze wysiłki na prawdę mają sens i przekładają się na zadowolenie naszych Klientów. Wszystkie nasze produkty, takie jak balony, kokardy narodowe, torby papierowe, czy daszki i czapeczki kartonowe są wykonywane z bardzo dużą dokładnością. Mamy doświadczenie w tworzeniu gadżetów dzięki czemu naszą produkcję potrafimy dostosować do wymagań czasowych oraz ilościowych naszych klientów. Np. chorągiewki papierowe, czy kokardy narodowe wykonujemy w bardzo dużych ilościach nawet w ciągu kilku dni roboczych. Tak samo podchodzimy do produkcji gadżetów takich jak balony, czy czapeczki i daszki kartonowe. Dodatkowym plusem są także nasze ceny, które swoją atrakcyjność zawdzięczają temu, że bezpośrednio sprzedajemy swoje produkty, a więc zamawiając u nas towar nie płacą Państwo pośrednikom. Dziękujemy za odwiedzenie strony naszej firmy. Zapraszamy do zapoznania się z pełną ofertą Galerii Obrazu."
+            content="Capicola brisket venison, ball tip buffalo ground round alcatra biltong chuck drumstick. Ribeye sirloin boudin t-bone, chuck pork belly short loin burgdoggen brisket. Strip steak shank turducken spare ribs ball tip bresaola, picanha fatback shoulder beef doner venison rump drumstick. Tongue rump flank burgdoggen meatball pastrami strip steak. Tenderloin pig tongue t-bone ball tip, cow venison capicola pancetta shoulder prosciutto pastrami fatback beef ribs chuck. Shankle spare ribs short ribs brisket. Drumstick andouille pancetta, jerky kielbasa turkey boudin capicola pork loin salami tail frankfurter.."
           >
             <Button
               type="hide"
@@ -96,9 +96,7 @@ class Index extends Component {
           <Contact
             // id= "kontakt"
             title="kontakt"
-            content="Jeśli masz pytania, sugestie lub wątpliwości, skontaktuj się z nami. Najlepsze projekty często są kreowane dzięki kontaktom bezpośrednim rozwijającym wzajemne relacje. 
-            Pomocą służą nasi przedstawiciele handlowi.
-          Możesz także skorzystać z zamieszczonego poniżej formularza kontaktowego."
+            content="Capicola brisket venison, ball tip buffalo ground round alcatra biltong chuck drumstick. Ribeye sirloin boudin t-bone, chuck pork belly short loin burgdoggen brisket. Strip steak shank turducken spare ribs ball tip bresaola, picanha fatback shoulder beef doner venison rump drumstick. Tongue rump flank burgdoggen meatball pastrami strip steak. Tenderloin pig tongue t-bone ball tip, cow venison capicola pancetta shoulder prosciutto pastrami fatback beef ribs chuck. Shankle spare ribs short ribs brisket. Drumstick andouille pancetta, jerky kielbasa turkey boudin capicola pork loin salami tail frankfurter.."
           />
 
 
@@ -114,29 +112,4 @@ class Index extends Component {
 
 export default Index;
 
-/* eslint no-undef: "off" */
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(
-      limit: 2000
-      sort: { fields: [fields___date], order: DESC }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            date
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover
-            date
-          }
-        }
-      }
-    }
-  }
-`;
+

@@ -102,10 +102,10 @@ class Contact extends Component {
                     <div className="adress-container">
                         <h5>DANE KONTAKTOWE</h5>
                         <p><strong>Galeria Obrazu</strong></p>
-                        <p>Wileńska 51, 05-200 Wołomin</p>
-                        <p>NIP: 125 146 13 60</p>
-                        <p>500 396 933 | 603 943 924</p>
-                        <a href="mailto:biuro@galeriaobrazu.com.pl">biuro@galeriaobrazu.com.pl</a>
+                        <p>Capicola brisket venison</p>
+                        <p>NIP: xxx xxx xx xx</p>
+                        <p>xxx xxx xxx | xxx xxx xxx</p>
+                        <a href="mailto:xxx@xxx.xx">xxx@xxx.xx</a>
 
                     
                     </div>

@@ -21,15 +21,15 @@ function Products(props) {
                 <h2>NASZE PRODUKTY</h2>
                 <div className="separator"></div>
                 <p>
-                    Galeria Obrazu jest producentem wszelakich gadżetów reklamowych, które pozwolą stać się rozpoznawalnym Państwa firmie jak i również uświetnią każdą imprezę.
-                        <strong> Gwarantujemy konkurencyjne ceny.</strong>
+                Bacon ipsum dolor amet frankfurter cow meatloaf pork belly, salami drumstick ball tip pastrami pork. Jerky porchetta meatball, leberkas short loin burgdoggen chuck jowl buffalo pancetta sirloin brisket cupim bresaola landjaeger. Turkey tri-tip ball tip jowl, capicola salami drumstick. 
+                        <strong> Tail meatball fatback landjaeger andouille beef ribs..</strong>
                 </p>
             </div>
             <div className="call-to-action">
                 <div className="container">
-                    <h3>Zapraszamy również do obejrzenia naszych aukcji na allegro:</h3>
+                    <h3>Bacon ipsum dolor amet frankfurter cow meatloaf pork bell:</h3>
                     <Button
-                        linkContent="Allegro"
+                        linkContent="call to action"
                         linkTo="#"
                     />
 
