@@ -14,6 +14,7 @@
     "gatsby-plugin-nprogress": "2.0.7",
     "gatsby-plugin-offline": "2.0.21",
     "gatsby-plugin-react-helmet": "3.0.5",
+    "gatsby-plugin-react-svg": "^2.0.0",
     "gatsby-plugin-sass": "^2.0.10",
     "gatsby-plugin-sharp": "^2.2.18",
     "gatsby-plugin-sitemap": "2.0.4",
@@ -75,6 +76,7 @@
     "lint:js": "eslint --ext .js,.jsx .",
     "lint:md": "remark content/posts/",
     "write-good": "write-good $(glob 'content/posts/**/*.md')",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "format:js": "prettier '**/*.{js,jsx}' --write"
   },
   "remarkConfig": {

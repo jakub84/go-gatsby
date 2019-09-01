@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
-import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import Header from "../components/indexpage/header/header";
@@ -12,7 +11,7 @@ import Button from "../components/indexpage/button/button";
 import Contact from "../components/indexpage/contact/contact";
 import mainLogoWhite from "../../static/header/go_logo-white.svg";
 import mainLogo from "../../static/header/go_logo.svg";
-import { Link, animateScroll as scroll } from "react-scroll";
+
 
 
 
@@ -111,5 +110,4 @@ class Index extends Component {
 
 
 export default Index;
-
 
